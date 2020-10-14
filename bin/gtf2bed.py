@@ -84,7 +84,7 @@ for annotationSource in sources:
                 attribute = re.sub("^\s*","",attribute)
                 attribute = re.sub(r"\"","",attribute)
                 if attribute != "":
-                    key, value = attribute.split(' ')
+                    key, value = attribute.split(' ', 1)
                     attributeDict[key] = value
             if curTx != attributeDict['transcript_id'] and curTx != "":
 

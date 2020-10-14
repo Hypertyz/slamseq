@@ -47,7 +47,7 @@ with open(gtfFile, 'r') as f:
             attribute = re.sub("^\s*","",attribute)
             attribute = re.sub(r"\"","",attribute)
             if attribute != "":
-                key, value = attribute.split(' ')
+                key, value = attribute.split(' ', 1)
                 attributeDict[key] = value
         if not attributeDict['transcript_id'] in entryDict:
             entryDict[attributeDict['transcript_id']] = list()

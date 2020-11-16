@@ -83,7 +83,7 @@ deAnalysis <- function(counts, design) {
   row.names(countData.total) <- counts$gene_name
 
   countData <- counts %>%
-    dplyr::select(contains("_tc")) %>%
+    dplyr::select(contains("_tc", ignore.case = FALSE)) %>%
     as.matrix
 
   row.names(countData) <- counts$gene_name

@@ -12,6 +12,7 @@ regexes = {
     'R': ['v_R.txt', r"R version (\S+)"],
     'DESeq2': ['v_DESeq2.txt', r"\[1\] .{1}(\S+).{1}"],
     'MultiQC': ['v_multiqc.txt', r"multiqc, version (\S+)"],
+    'VarScan': ['v_varscan.txt', r"VarScan v(\S+)"]
 }
 results = OrderedDict()
 results['nf-core/slamseq'] = '<span style="color:#999999;\">N/A</span>'
@@ -22,6 +23,8 @@ results['Slamdunk'] = '<span style="color:#999999;\">N/A</span>'
 results['R'] = '<span style="color:#999999;\">N/A</span>'
 results['DESeq2'] = '<span style="color:#999999;\">N/A</span>'
 results['MultiQC'] = '<span style="color:#999999;\">N/A</span>'
+results['VarScan'] = '<span style="color:#999999;\">N/A</span>'
+
 
 # Search each file using its regex
 for k, v in regexes.items():

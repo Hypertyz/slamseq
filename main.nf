@@ -303,6 +303,7 @@ process get_software_versions {
     echo \$(R --version 2>&1) > v_R.txt
     R -e 'packageVersion("DESeq2")' | grep "\\[1\\]" > v_DESeq2.txt
     multiqc --version > v_multiqc.txt
+    varscan > v_varscan.txt
     scrape_software_versions.py &> software_versions_mqc.yaml
     """
 }

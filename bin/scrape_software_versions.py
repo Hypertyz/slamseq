@@ -23,6 +23,7 @@ results['R'] = '<span style="color:#999999;\">N/A</span>'
 results['DESeq2'] = '<span style="color:#999999;\">N/A</span>'
 results['MultiQC'] = '<span style="color:#999999;\">N/A</span>'
 
+
 # Search each file using its regex
 for k, v in regexes.items():
     try:
